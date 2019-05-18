@@ -33,14 +33,49 @@ router.post("/friends", function (req, res) {
 
     // characters.push(newcharacter);
 
-    res.json(newcharacter);
+    // res.json(newcharacter);
 
-    //  compare the difference between current user's scores against those from other users
+    // compare the difference between current user's scores against those from other users
     // Add up the differences to calculate the totalDifference
     // The closest match will be the user with the least amount of difference
     // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
     // display the name and a photo of the user match
     // if current is less than existing: 
+    //add up total in each array.
+    //the smallest difference will be the person that is your friend.
+    // for (var i = 0; i < arrOfArr.length; i++) {
+    //     var maxCount = { "array": -1, "count": 100 }
+    //     var count = 0
+    //     for (var j = 0; i < arrOfArr[i].length; i++) {
+    //         count += arrOfArr[i][j]
+    //     }
+    //     if (count < maxCount.count) {
+    //         maxCount.array = arrOfArr[i]
+    //         maxCount.count = count
+    //     }
+    // }
+
+    var closestMatch;
+    var totalDifference = 0;
+    var friends = friend;
+    var currentClosest = 100;
+    var currentUser = req.body;
+    var count = 0;
+    for (var i = 0; i < friends.length; i++) {
+        var otherFriendScores = friends[i].scores;
+        totalDifference = 0;
+        for (var j = 0; j < otherFriendScores.length; j++) {
+            totalDifference += Math.abs(otherFriendScores[j] - currentUser.scores[j]);
+        }
+        console.log("Friend " + friends[i].name + " got score " + totalDifference);
+        if (totalDifference < currentClosest) {
+            currentClosest = totalDifference;
+            closestMatch = friends[i];
+            console.log(closestMatch, " its here");
+        }
+    }
+    friend.push(currentUser);
+    res.send(closestMatch);
 
 });
 

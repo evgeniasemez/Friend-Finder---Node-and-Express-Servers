@@ -1,49 +1,49 @@
 var characters = [
     {
         "name": "Kevin",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://bowdoinorient.com/wp-content/uploads/2018/02/RGB-phoebe-nichols-mitch-toq.jpg",
         "scores": [
-            5,
+            4,
             1,
             4,
             4,
-            5,
-            1,
+            4,
             2,
-            5,
+            2,
+            1,
             4,
             1
         ]
     },
     {
         "name": "Grisha",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://bowdoinorient.com/wp-content/uploads/2018/02/RGB-phoebe-nichols-mitch-toq.jpg",
         "scores": [
-            5,
+            1,
             1,
             4,
             4,
-            5,
+            3,
             1,
             2,
-            5,
+            4,
             4,
             1
         ]
     },
     {
         "name": "Brian",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://bowdoinorient.com/wp-content/uploads/2018/02/RGB-phoebe-nichols-mitch-toq.jpg",
         "scores": [
             5,
-            1,
-            4,
-            4,
-            5,
-            1,
             2,
-            5,
             4,
+            5,
+            5,
+            1,
+            3,
+            1,
+            1,
             1
         ]
     }

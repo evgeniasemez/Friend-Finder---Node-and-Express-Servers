@@ -12,6 +12,8 @@ var app = express();
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// setting a background image
+app.use(express.static('public'));
 // console.log(keys);
 
 app.use('/api', appRoutes);
