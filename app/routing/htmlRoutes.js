@@ -9,12 +9,7 @@ var path = require("path");
 var router = express.Router();
 var PORT = 3000;
 
-// Sets up the Express app to handle data parsing
-// router.use(express.urlencoded({ extended: true }));
-// router.use(express.json());
-
 // Basic route that sends the user first to the AJAX Page
-
 router.get("/survey", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
     console.log("I am here");

@@ -19,9 +19,6 @@ app.use(express.static('public'));
 app.use('/api', appRoutes);
 app.use('/', keys);
 
-
-
-
 var PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function () {
