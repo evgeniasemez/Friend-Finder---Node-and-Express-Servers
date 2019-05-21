@@ -45,6 +45,7 @@ router.post("/friends", function (req, res) {
             console.log(closestMatch, " its here");
         }
     }
+    // pushing the closest match
     friend.push(currentUser);
     res.send(closestMatch);
 
