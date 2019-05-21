@@ -25,7 +25,7 @@ router.post("/friends", function (req, res) {
     newcharacter.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
 
     console.log(newcharacter);
-
+    // seatting a matched friend logic
     var closestMatch;
     var totalDifference = 0;
     var friends = friend;
